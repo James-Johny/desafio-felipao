@@ -23,7 +23,9 @@ else
   elo = "Unranked"
 end
 
-if heroXp < 5000 && heroXp > 6000
+if heroXp < 5000
+  puts "Parabéns #{heroName}, você possui #{heroXp} pontos de experiência, você é #{elo}."
+elsif heroXp > 6000
   puts "Parabéns #{heroName}, você possui #{heroXp} pontos de experiência, você é #{elo}."
 else
   puts "Que pena #{heroName}, você é #{elo}."
