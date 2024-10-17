@@ -1,5 +1,21 @@
-let heroName = prompt("Digite o seu nome de Heroi: ");
-let heroXp = (heroName.length * 1000)+(heroName.length * 321);
+
+var heroName = "James Johny";
+heroXp = heroName.length * 1000;
+
+function cElo(heroXp) {
+
+
+    while (heroXp < 2) {
+        heroXp + 1000
+        heroXp++
+    }
+    return heroXp
+}
+
+cElo()
+
+console.log(+ heroName + heroXp)
+
 
     if (heroXp <= 1000) {
         elo = "Ferro";
@@ -32,11 +48,16 @@ let heroXp = (heroName.length * 1000)+(heroName.length * 321);
 
 
 
-    let msg
+    let msg = document.getElementById("heroClass");
 
-        if (heroXp >= 5000 && heroXp >= 6000) {
-            console.log("Parabéns " + heroName + " você possuí " + heroXp + " pontos de experiência, você é " + elo);
+        if (heroXp >= 5000) {
+            msg.textContent = "Parabéns " + heroName + " você possuí " + heroXp + " pontos de experiência, você é " + elo + "!";
+            console.log("Parabéns " + heroName + " você possuí " + heroXp + " pontos de experiência, você é " + elo + "!");
+        } else if (heroXp >= 6000) {
+            msg.textContent = "Parabéns " + heroName + " você possuí " + heroXp + " pontos de experiência, você é " + elo + "!";
+            console.log("Parabéns " + heroName + " você possuí " + heroXp + " pontos de experiência, você é " + elo + "!");
         } else {
+            msg.textContent = "Que pena " + heroName + ", você é " + elo + "!";
             console.log("Que pena " + heroName + ", você é " + elo + "!");
         }
 
